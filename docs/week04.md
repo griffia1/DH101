@@ -2,9 +2,10 @@
 
 ## The Artifact
 Describe or embed your artifact here.
-Include images, links, or media as appropriate.
 
 ![Comic DH101 Arianna](../images/Comic%20DH101%20Arianna.png)
+
+Include images, links, or media as appropriate.
 
 ## Process Notes
 How did you make this?
