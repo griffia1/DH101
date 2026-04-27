@@ -1,3 +1,5 @@
+# Home
+
 # DH101
 Hello, DH — this site will document my critical making this semester.
 
@@ -37,5 +39,3 @@ Hello, DH — this site will document my critical making this semester.
 - [How I Use AI](pages/how-i-use-ai.md)
 - [Markdown Guide](pages/markdown-guide.md)
 - [Sustainability](pages/sustainability.md)
-Hello! This site will document my critical making this semester in DH101.
-Please navigate to find my makes and reflections.
