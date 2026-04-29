@@ -1,3 +1,4 @@
 # Sustainability & Ethics
 
 Reflect on environmental and ethical implications of AI.
+I never used AI before this class, because as a writer, I was less interested in it. This means that although I use AI for this class, I generally refrain from using it. Through our unit on AI use and sustainability, I learned that an AI search can take ten times the energy as a regular Google search, so I try to keep this in mind. Because this was for an educational purpose, I used AI when asked to despite these environmental effects. I try in my personal life not to use it too much in order to reduce my carbon footprint, like any other energy-saving behavior. 
