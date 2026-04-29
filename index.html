@@ -70,6 +70,89 @@
         letter-spacing: 1px;
       }
       
+      .tabs-container {
+        margin-bottom: 30px;
+      }
+      
+      .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #ff69b4;
+        padding-bottom: 10px;
+      }
+      
+      .tab-button {
+        background: linear-gradient(135deg, #fff0f6 0%, #ffe0ec 100%);
+        border: 2px solid #ff69b4;
+        border-radius: 8px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 1em;
+        color: #ff1493;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+      
+      .tab-button:hover {
+        background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+        color: white;
+        transform: translateY(-2px);
+      }
+      
+      .tab-button.active {
+        background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+        color: white;
+      }
+      
+      .tab-content {
+        display: none;
+        background: linear-gradient(135deg, #fff0f6 0%, #ffe0ec 100%);
+        border-radius: 10px;
+        padding: 20px;
+        border: 2px solid #ff69b4;
+      }
+      
+      .tab-content.active {
+        display: block;
+      }
+      
+      .content-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      
+      .content-card {
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        border: 2px solid #ff69b4;
+      }
+      
+      .content-card h3 {
+        color: #ff1493;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+      }
+      
+      .content-card a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 15px;
+        background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+      }
+      
+      .content-card a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(255, 20, 147, 0.3);
+      }
+      
       .links-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -116,40 +199,218 @@
       </div>
       
       <div class="section">
-        <h2>Makes</h2>
-        <div class="links-grid">
-          <a href="makes/week01.md" class="link-card">Week 1</a>
-          <a href="makes/week02.md" class="link-card">Week 2</a>
-          <a href="makes/week03.md" class="link-card">Week 3</a>
-          <a href="makes/week04.md" class="link-card">Week 4</a>
-          <a href="makes/week05.md" class="link-card">Week 5</a>
-          <a href="makes/week06.md" class="link-card">Week 6</a>
-          <a href="makes/week07.md" class="link-card">Week 7</a>
-          <a href="makes/week08.md" class="link-card">Week 8</a>
-          <a href="makes/week09.md" class="link-card">Week 9</a>
-          <a href="makes/week10.md" class="link-card">Week 10</a>
-          <a href="makes/week11.md" class="link-card">Week 11</a>
-          <a href="makes/week12.md" class="link-card">Week 12</a>
-          <a href="makes/week13.md" class="link-card">Week 13</a>
-        </div>
-      </div>
-      
-      <div class="section">
-        <h2>Reflections</h2>
-        <div class="links-grid">
-          <a href="reflections/week01.md" class="link-card">Week 1</a>
-          <a href="reflections/week02.md" class="link-card">Week 2</a>
-          <a href="reflections/week03.md" class="link-card">Week 3</a>
-          <a href="reflections/week04.md" class="link-card">Week 4</a>
-          <a href="reflections/week05.md" class="link-card">Week 5</a>
-          <a href="reflections/week06.md" class="link-card">Week 6</a>
-          <a href="reflections/week07.md" class="link-card">Week 7</a>
-          <a href="reflections/week08.md" class="link-card">Week 8</a>
-          <a href="reflections/week09.md" class="link-card">Week 9</a>
-          <a href="reflections/week10.md" class="link-card">Week 10</a>
-          <a href="reflections/week11.md" class="link-card">Week 11</a>
-          <a href="reflections/week12.md" class="link-card">Week 12</a>
-          <a href="reflections/week13.md" class="link-card">Week 13</a>
+        <h2>Weeks</h2>
+        <div class="tabs-container">
+          <div class="tabs">
+            <button class="tab-button active" data-week="1">Week 1</button>
+            <button class="tab-button" data-week="2">Week 2</button>
+            <button class="tab-button" data-week="3">Week 3</button>
+            <button class="tab-button" data-week="4">Week 4</button>
+            <button class="tab-button" data-week="5">Week 5</button>
+            <button class="tab-button" data-week="6">Week 6</button>
+            <button class="tab-button" data-week="7">Week 7</button>
+            <button class="tab-button" data-week="8">Week 8</button>
+            <button class="tab-button" data-week="9">Week 9</button>
+            <button class="tab-button" data-week="10">Week 10</button>
+            <button class="tab-button" data-week="11">Week 11</button>
+            <button class="tab-button" data-week="12">Week 12</button>
+            <button class="tab-button" data-week="13">Week 13</button>
+          </div>
+          
+          <div id="week-1" class="tab-content active">
+            <div class="content-grid">
+              <div class="content-card">
+                <h3>Make</h3>
+                <p>Your critical making for this week.</p>
+                <a href="docs/week01.md">View Make →</a>
+              </div>
+              <div class="content-card">
+                <h3>Reflection</h3>
+                <p>Your reflections on this week's work.</p>
+                <a href="reflections/week01.md">View Reflection →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="week-2" class="tab-content">
+            <div class="content-grid">
+              <div class="content-card">
+                <h3>Make</h3>
+                <p>Your critical making for this week.</p>
+                <a href="docs/week02.md">View Make →</a>
+              </div>
+              <div class="content-card">
+                <h3>Reflection</h3>
+                <p>Your reflections on this week's work.</p>
+                <a href="reflections/week02.md">View Reflection →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="week-3" class="tab-content">
+            <div class="content-grid">
+              <div class="content-card">
+                <h3>Make</h3>
+                <p>Your critical making for this week.</p>
+                <a href="docs/week03.md">View Make →</a>
+              </div>
+              <div class="content-card">
+                <h3>Reflection</h3>
+                <p>Your reflections on this week's work.</p>
+                <a href="reflections/week03.md">View Reflection →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="week-4" class="tab-content">
+            <div class="content-grid">
+              <div class="content-card">
+                <h3>Make</h3>
+                <p>Your critical making for this week.</p>
+                <a href="docs/week04.md">View Make →</a>
+              </div>
+              <div class="content-card">
+                <h3>Reflection</h3>
+                <p>Your reflections on this week's work.</p>
+                <a href="reflections/week04.md">View Reflection →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="week-5" class="tab-content">
+            <div class="content-grid">
+              <div class="content-card">
+                <h3>Make</h3>
+                <p>Your critical making for this week.</p>
+                <a href="docs/week05.md">View Make →</a>
+              </div>
+              <div class="content-card">
+                <h3>Reflection</h3>
+                <p>Your reflections on this week's work.</p>
+                <a href="reflections/week05.md">View Reflection →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="week-6" class="tab-content">
+            <div class="content-grid">
+              <div class="content-card">
+                <h3>Make</h3>
+                <p>Your critical making for this week.</p>
+                <a href="docs/week06.md">View Make →</a>
+              </div>
+              <div class="content-card">
+                <h3>Reflection</h3>
+                <p>Your reflections on this week's work.</p>
+                <a href="reflections/week06.md">View Reflection →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="week-7" class="tab-content">
+            <div class="content-grid">
+              <div class="content-card">
+                <h3>Make</h3>
+                <p>Your critical making for this week.</p>
+                <a href="docs/week07.md">View Make →</a>
+              </div>
+              <div class="content-card">
+                <h3>Reflection</h3>
+                <p>Your reflections on this week's work.</p>
+                <a href="reflections/week07.md">View Reflection →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="week-8" class="tab-content">
+            <div class="content-grid">
+              <div class="content-card">
+                <h3>Make</h3>
+                <p>Your critical making for this week.</p>
+                <a href="docs/week08.md">View Make →</a>
+              </div>
+              <div class="content-card">
+                <h3>Reflection</h3>
+                <p>Your reflections on this week's work.</p>
+                <a href="reflections/week08.md">View Reflection →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="week-9" class="tab-content">
+            <div class="content-grid">
+              <div class="content-card">
+                <h3>Make</h3>
+                <p>Your critical making for this week.</p>
+                <a href="docs/week09.md">View Make →</a>
+              </div>
+              <div class="content-card">
+                <h3>Reflection</h3>
+                <p>Your reflections on this week's work.</p>
+                <a href="reflections/week09.md">View Reflection →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="week-10" class="tab-content">
+            <div class="content-grid">
+              <div class="content-card">
+                <h3>Make</h3>
+                <p>Your critical making for this week.</p>
+                <a href="docs/week10.md">View Make →</a>
+              </div>
+              <div class="content-card">
+                <h3>Reflection</h3>
+                <p>Your reflections on this week's work.</p>
+                <a href="reflections/week10.md">View Reflection →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="week-11" class="tab-content">
+            <div class="content-grid">
+              <div class="content-card">
+                <h3>Make</h3>
+                <p>Your critical making for this week.</p>
+                <a href="docs/week11.md">View Make →</a>
+              </div>
+              <div class="content-card">
+                <h3>Reflection</h3>
+                <p>Your reflections on this week's work.</p>
+                <a href="reflections/week11.md">View Reflection →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="week-12" class="tab-content">
+            <div class="content-grid">
+              <div class="content-card">
+                <h3>Make</h3>
+                <p>Your critical making for this week.</p>
+                <a href="docs/week12.md">View Make →</a>
+              </div>
+              <div class="content-card">
+                <h3>Reflection</h3>
+                <p>Your reflections on this week's work.</p>
+                <a href="reflections/week12.md">View Reflection →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="week-13" class="tab-content">
+            <div class="content-grid">
+              <div class="content-card">
+                <h3>Make</h3>
+                <p>Your critical making for this week.</p>
+                <a href="docs/week13.md">View Make →</a>
+              </div>
+              <div class="content-card">
+                <h3>Reflection</h3>
+                <p>Your reflections on this week's work.</p>
+                <a href="reflections/week13.md">View Reflection →</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
@@ -168,5 +429,23 @@
         <p>&copy; 2026 DH101 Critical Making Portfolio</p>
       </footer>
     </div>
-  </body>
-</html>
+    
+    <script>
+      // Tab switching functionality
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const tabContents = document.querySelectorAll('.tab-content');
+      
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const week = button.getAttribute('data-week');
+          
+          // Remove active class from all buttons and contents
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabContents.forEach(content => content.classList.remove('active'));
+          
+          // Add active class to clicked button and corresponding content
+          button.classList.add('active');
+          document.getElementById(`week-${week}`).classList.add('active');
+        });
+      });
+    </script>
