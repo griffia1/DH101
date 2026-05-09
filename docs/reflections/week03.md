@@ -2,3 +2,8 @@
 # Week 3 Reflection
 
 Reflect 3: What does “authenticity” mean when identity is co-constructed with AI?
+## The Artifact
+
+<!-- Place your artifact file or a link to it here -->
+
+[Artifact File: ]()
