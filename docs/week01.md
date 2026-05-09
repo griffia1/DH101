@@ -1,8 +1,12 @@
 # Week 1 – Reverse Engineering
 
 ## The Artifact
-Describe or embed your artifact here.
+<embed src="../Make 1 - DH101 - Arianna-2.pdf" width="600" height="400" type="application/pdf">
+
+[Artifact File: ../Make 1 - DH101 - Arianna-2.pdf](../Make 1 - DH101 - Arianna-2.pdf)
+
 Include images, links, or media as appropriate.
+
 
 ## Process Notes
 How did you make this?
