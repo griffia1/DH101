@@ -3,6 +3,7 @@
 ## The Artifact
 Describe or embed your artifact here.
 Include images, links, or media as appropriate.
+Foxconn infographic
 
 ## Process Notes
 How did you make this?

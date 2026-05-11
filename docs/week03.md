@@ -4,6 +4,7 @@
 Describe or embed your artifact here.
 Include images, links, or media as appropriate.
 
+
 ![Week 3 photo](/images/week03.jpg)
 *Place your photo at `images/week03.jpg` in the repo, or replace the path with a remote URL.*
 
