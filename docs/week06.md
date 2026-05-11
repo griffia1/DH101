@@ -9,9 +9,6 @@ How did you make this?
 What tools did you use?
 What decisions did you make?
 
-## Reflection
-Respond to this week’s reflection prompt in 200–300 words.
-
 ## Attribution & AI Use
 - Tools used:
 - AI prompts (summary):
